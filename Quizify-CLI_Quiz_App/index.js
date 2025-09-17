@@ -67,7 +67,7 @@ let score = 0;
 
 function playGame(userAnswer, correctAnswer){
     if(userAnswer.toLowerCase() === correctAnswer){
-            score++;
+            score++; 
             console.log(kuler("CORRECT ANSWER", "#16a34a"));
         } else{
             score--;
@@ -104,8 +104,6 @@ function highScorer(leaderBoard){
 
 
 
-
-
 /** Function To Print Question and Options */
 function showQuestionAndOptions(database){
     for(let i =0; i<database.data.length; i++){
@@ -124,6 +122,7 @@ function showQuestionAndOptions(database){
 
 /* Execution of Codes */
 showQuestionAndOptions(database);
+
 
 console.log(kuler("----------------------Your Score----------------------\n", "#fcd34d"));
 console.log(kuler(`Your Score is --> ${score}`, "#d946ef"));
